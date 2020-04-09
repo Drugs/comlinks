@@ -107,7 +107,7 @@ div.col-xs-12 {
     color: inherit;
 }
 </style>
-<title>Login PROPP</title>
+<title>COMLINKS Login</title>
 <script type="text/javascript">//<![CDATA[
 window.onload=function(){
 
@@ -137,19 +137,19 @@ window.onload=function(){
         <div class="row">
             <div class="col-xs-12">
                 <div class="col-sm-12 col-md-6 col-md-push-3 col-lg-4 col-lg-push-4">
-                    <h1>Sistema PROPP 2.0</h1>
+                    <h1>Sistema COMLINKS</h1>
                     <form role="form" action="busca_no_bd.php" method="post" id="login-form" autocomplete="off">
                         <div id="success" class="text-center"></div>
                         <div class="form-group">
                         <?php
-                            if($_GET["error"] == "mail")
+                            if(isset($_GET["error"]) and  $_GET["error"] == "mail")
                                 echo "<div id='trouble' class='alert alert-danger'>Login não encontrado</div>"?>
                             <label for="email" class="sr-only">Email</label>
                             <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu email" required>
                         </div>
                         <div class="form-group">
                         <?php
-                            if($_GET["error"] == "password")
+                            if(isset($_GET["error"]) and $_GET["error"] == "password")
                                 echo"<div id='trouble' class='alert alert-danger'>Senha Incorreta</div>"?>
                             <label for="key" class="sr-only">Password</label>
                             <input type="password" name="key" id="key" class="form-control" placeholder="Senha" required>

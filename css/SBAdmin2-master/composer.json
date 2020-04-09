@@ -1,0 +1,22 @@
+{
+	"name": "aphp/sbadmin2",
+	"description": "SBAdmin 2 dark. An open source Bootstrap 4 admin theme.",
+	"keywords": [
+		"sbadmin2",
+		"dark-theme",
+		"dark",
+		"css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template",
+        "admin",
+        "app"
+	],
+	"type": "html",
+	"license": "MIT",
+	"minimum-stability": "dev",
+	"require": {
+	}
+}
